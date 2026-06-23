@@ -22,6 +22,24 @@ Package license: MIT
 
 Summary: Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
 
+About crewai-cli
+----------------
+
+Home: https://github.com/crewAIInc/crewAI
+
+Package license: MIT
+
+Summary: CLI for CrewAI — scaffold, run, deploy and manage AI agent crews.
+
+About crewai-core
+-----------------
+
+Home: https://github.com/crewAIInc/crewAI
+
+Package license: MIT
+
+Summary: Shared utilities for CrewAI — version, paths, user-data, telemetry, printer."
+
 About crewai-files
 ------------------
 
@@ -85,6 +103,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-crewai-green.svg)](https://anaconda.org/conda-forge/crewai) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/crewai.svg)](https://anaconda.org/conda-forge/crewai) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/crewai.svg)](https://anaconda.org/conda-forge/crewai) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/crewai.svg)](https://anaconda.org/conda-forge/crewai) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-crewai--cli-green.svg)](https://anaconda.org/conda-forge/crewai-cli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/crewai-cli.svg)](https://anaconda.org/conda-forge/crewai-cli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/crewai-cli.svg)](https://anaconda.org/conda-forge/crewai-cli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/crewai-cli.svg)](https://anaconda.org/conda-forge/crewai-cli) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-crewai--core-green.svg)](https://anaconda.org/conda-forge/crewai-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/crewai-core.svg)](https://anaconda.org/conda-forge/crewai-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/crewai-core.svg)](https://anaconda.org/conda-forge/crewai-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/crewai-core.svg)](https://anaconda.org/conda-forge/crewai-core) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-crewai--files-green.svg)](https://anaconda.org/conda-forge/crewai-files) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/crewai-files.svg)](https://anaconda.org/conda-forge/crewai-files) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/crewai-files.svg)](https://anaconda.org/conda-forge/crewai-files) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/crewai-files.svg)](https://anaconda.org/conda-forge/crewai-files) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-crewai--tools-green.svg)](https://anaconda.org/conda-forge/crewai-tools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/crewai-tools.svg)](https://anaconda.org/conda-forge/crewai-tools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/crewai-tools.svg)](https://anaconda.org/conda-forge/crewai-tools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/crewai-tools.svg)](https://anaconda.org/conda-forge/crewai-tools) |
 
@@ -98,16 +118,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `crewai, crewai-files, crewai-tools` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `crewai, crewai-cli, crewai-core, crewai-files, crewai-tools` can be installed with `conda`:
 
 ```
-conda install crewai crewai-files crewai-tools
+conda install crewai crewai-cli crewai-core crewai-files crewai-tools
 ```
 
 or with `mamba`:
 
 ```
-mamba install crewai crewai-files crewai-tools
+mamba install crewai crewai-cli crewai-core crewai-files crewai-tools
 ```
 
 It is possible to list all of the versions of `crewai` available on your platform with `conda`:
