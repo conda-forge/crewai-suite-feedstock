@@ -10,7 +10,7 @@ recipe:
   version: ${{ version }}
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -21,8 +21,6 @@ outputs:
         sha256: 3f3781750eb3e55b86241e35b5e51cd20fb7f7f4b6671eb49b74b4af2befa1a2
     build:
       noarch: python
-      skip:
-        - win
       script: |
         pip install . -vv --no-deps --no-build-isolation
     requirements:
@@ -64,8 +62,6 @@ outputs:
         sha256: 2de4177597cf270c33df784a937d64032891cc4f52ac30c1a8266d0b3b903a28
     build:
       noarch: python
-      skip:
-        - win
       python:
         entry_points:
           - crewai = crewai_cli.cli:crewai
@@ -119,8 +115,6 @@ outputs:
         sha256: bdf9a450fd5c97dab4fcadb063717cae5df7449a27ba3f1cc501e6996350dbeb
     build:
       noarch: python
-      skip:
-        - win
       python:
         entry_points:
           - crewai = crewai_cli.cli:crewai
@@ -188,8 +182,6 @@ outputs:
         sha256: 609978c82a134436df9e106295cf627b8497cf05b1b94a08b671e2fcc4dea126
     build:
       noarch: python
-      skip:
-        - win
       script: |
         pip install . -vv --no-deps --no-build-isolation
     requirements:
@@ -227,8 +219,6 @@ outputs:
         sha256: 281752830a6715714668dc8a14a4aa1f598f82ad74905ca914549ae283771e4d
     build:
       noarch: python
-      skip:
-        - win
       script: |
         pip install . -vv --no-deps --no-build-isolation
     requirements:
