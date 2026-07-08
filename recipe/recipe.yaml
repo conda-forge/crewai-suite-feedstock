@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.1"
+  version: "1.15.2"
   python_min: "3.10"
 
 recipe:
@@ -10,7 +10,7 @@ recipe:
   version: ${{ version }}
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - package:
@@ -18,7 +18,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: 3f3781750eb3e55b86241e35b5e51cd20fb7f7f4b6671eb49b74b4af2befa1a2
+        sha256: 43cecd3a4de8a781264fe882575065ab21688906ce400a29a2363c292e1387b1
     build:
       noarch: python
       script: |
@@ -59,7 +59,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: 2de4177597cf270c33df784a937d64032891cc4f52ac30c1a8266d0b3b903a28
+        sha256: f11f31cdfd35817d8f5d4dcc29794c6374e6f89efd6188ae5f969b81f05cc1d1
     build:
       noarch: python
       python:
@@ -112,7 +112,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: bdf9a450fd5c97dab4fcadb063717cae5df7449a27ba3f1cc501e6996350dbeb
+        sha256: deb2d882105cb9075cdd2198ac8398f9001315f2abc28d815fec66b003a2acbf
     build:
       noarch: python
       python:
@@ -179,7 +179,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: 609978c82a134436df9e106295cf627b8497cf05b1b94a08b671e2fcc4dea126
+        sha256: 2290a2f41794fde0861fc784ff150841786968ea17112b47db70a1460690ba69
     build:
       noarch: python
       script: |
@@ -216,7 +216,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: 281752830a6715714668dc8a14a4aa1f598f82ad74905ca914549ae283771e4d
+        sha256: 199b2e41de403401bb876a81fe4d1c21fb04a7ba3268566310dd3ae1a2a5d210
     build:
       noarch: python
       script: |
