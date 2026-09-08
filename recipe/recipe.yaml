@@ -228,7 +228,7 @@ outputs:
       run:
         - python >=${{ python_min }},<3.14
         - pillow >=12.3.0,<12.4.0
-        - pypdf >=6.14.2,<6.15.0
+        - pypdf >=6.16.1,<6.17.0
         - python-magic >=0.4.27
         - aiocache >=0.12.3,<0.13.0
         - aiofiles >=24.1.0,<24.2.0
