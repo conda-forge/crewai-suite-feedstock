@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.22"
+  version: "1.15.23"
 
 recipe:
   name: crewai-suite
@@ -17,7 +17,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: 6b85c609536bdca62e93eca59933f3609f79b8e207e8f6d3c59a8365a5ed5d78
+        sha256: e33b466622dbee31d20eec4eb5a1feca8ad4b48c04c0397cdc1a7ae754d363bb
     build:
       noarch: python
       script: |
@@ -58,7 +58,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: b7e00daedfbee9102ce4fcaffa10224b27c9c02e2b976c98a25acf214730acae
+        sha256: 2c897b2cf8f9321835fa2822dac954275a6029de624cff78a18309b08b00a7b9
     build:
       noarch: python
       python:
@@ -111,7 +111,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: 0b1c654f35e07dfe41720337c56542b334644a32c5e4498a6e38e5e7da7dd82e
+        sha256: 23c3f83c6758cd35df7ab0a917dfb0c727b3583389d729d978b3e95317b7d6a8
     build:
       noarch: python
       python:
@@ -130,7 +130,7 @@ outputs:
         - ${{ pin_subpackage('crewai-cli', exact=True) }}
         - pydantic >=2.11.9,<2.13
         - openai >=2.30.0,<3
-        - instructor >=1.3.3
+        - instructor >=1.3.3,<1.16
         - pdfplumber >=0.11.4,<0.12.0
         - regex >=2026.1.15,<2026.2.0
         - opentelemetry-api >=1.42.0,<2
@@ -178,7 +178,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: 225cd76d8df4e7a394eace7137fdafefffc7d2f2a34a4a908e7b36c76f8244a7
+        sha256: 5ab787cc7926ebb50ce2f9eca905380aaf858c3fd56a35736d62c7e68c709d3f
     build:
       noarch: python
       script: |
@@ -215,7 +215,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: b48e9057b72f458d21cac6479f5568307cd024a44af7abba5da95526d824a40a
+        sha256: 80dac9f9024999e86f21ec67d5759ee92b77e04fae363544d22aa01c59153973
     build:
       noarch: python
       script: |
