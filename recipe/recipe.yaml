@@ -236,6 +236,7 @@ outputs:
         - aiofiles >=24.1.0,<24.2.0
         - tinytag >=2.2.1,<2.3.0
         - av >=13.0.0,<13.1.0
+        - pydantic >=2.11.9,<2.13.0
     tests:
       - python:
           imports:
