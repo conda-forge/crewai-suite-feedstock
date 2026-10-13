@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.23"
+  version: "1.15.27"
 
 recipe:
   name: crewai-suite
@@ -17,7 +17,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: e33b466622dbee31d20eec4eb5a1feca8ad4b48c04c0397cdc1a7ae754d363bb
+        sha256: ec686838deb5d43b9ccf58dc17a6f296e6725ef3a195d00af692e65ba9b69319
     build:
       noarch: python
       script: |
@@ -34,7 +34,7 @@ outputs:
         - httpx >=0.28.1,<0.29.0
         - packaging >=23.0
         - portalocker >=2.7.0,<2.8.0
-        - pyjwt >=2.13.0,<3
+        - pyjwt >=2.15.0,<3
         - pydantic >=2.11.9,<2.13.0
         - rich >=13.7.1
         - opentelemetry-api >=1.42.0,<2
@@ -58,7 +58,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: 2c897b2cf8f9321835fa2822dac954275a6029de624cff78a18309b08b00a7b9
+        sha256: bc87df202548e11fc51b14d0008166914757f1d1fe7e7fe557296f3e90c8674d
     build:
       noarch: python
       python:
@@ -80,7 +80,7 @@ outputs:
         - appdirs >=1.4.4,<1.5.0
         - cryptography >=42.0
         - httpx >=0.28.1,<0.29.0
-        - pyjwt >=2.13.0,<3
+        - pyjwt >=2.15.0,<3
         - rich >=13.7.1
         - tomli >=2.0.2,<2.1.0
         - tomli-w >=1.1.0,<1.2.0
@@ -111,7 +111,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: 23c3f83c6758cd35df7ab0a917dfb0c727b3583389d729d978b3e95317b7d6a8
+        sha256: 764ca35f996898369819faaa5e107bd316ba7f1fd66ad9d501e8ba38f102b602
     build:
       noarch: python
       python:
@@ -136,15 +136,17 @@ outputs:
         - opentelemetry-api >=1.42.0,<2
         - opentelemetry-sdk >=1.42.0,<2
         - opentelemetry-exporter-otlp-proto-http >=1.42.0,<2
-        - chromadb >=1.1.0,<1.2.0
+        - chromadb >=1.5.9,<1.6.0
         - tokenizers >=0.21,<1
         - openpyxl >=3.1.5,<3.2.0
         - python-dotenv >=1.2.2,<2
-        - pyjwt >=2.13.0,<3
-        - click >=8.1.7,<8.2.0
+        - pyjwt >=2.15.0,<3
+        -  oauthlib >=4.0.0,<5
+        - click >=8.1.7,<9
         - appdirs >=1.4.4,<1.5.0
         - jsonref >=1.1.0,<1.2.0
         - json-repair >=0.60.1,<0.61.0
+        - cel-python >=0.5.0,<0.6
         - tomli-w >=1.1.0,<1.2.0
         - tomli >=2.0.2,<2.1.0
         - json5 >=0.10.0,<0.11.0
@@ -178,7 +180,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: 5ab787cc7926ebb50ce2f9eca905380aaf858c3fd56a35736d62c7e68c709d3f
+        sha256: 10607629b852e6f124683811f0a44480371e0638642f7ad1dac0681a9bf4bcda
     build:
       noarch: python
       script: |
@@ -215,7 +217,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: 80dac9f9024999e86f21ec67d5759ee92b77e04fae363544d22aa01c59153973
+        sha256: 0f67ae5b8016af14a6947627d896f1a7265f578269aaebd04d2ad05155e1cc14
     build:
       noarch: python
       script: |
@@ -228,7 +230,7 @@ outputs:
       run:
         - python >=${{ python_min }},<3.14
         - pillow >=12.3.0,<12.4.0
-        - pypdf >=6.16.1,<6.17.0
+        - pypdf >=6.19.0,<6.20.0
         - python-magic >=0.4.27
         - aiocache >=0.12.3,<0.13.0
         - aiofiles >=24.1.0,<24.2.0
