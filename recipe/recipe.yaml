@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.27"
+  version: "1.15.28"
 
 recipe:
   name: crewai-suite
@@ -17,7 +17,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: ec686838deb5d43b9ccf58dc17a6f296e6725ef3a195d00af692e65ba9b69319
+        sha256: 996edf242015e6dee8e6c4ab6d154950ac626cc5d95dfc0331b97ff41acbf6e1
     build:
       noarch: python
       script: |
@@ -58,7 +58,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: bc87df202548e11fc51b14d0008166914757f1d1fe7e7fe557296f3e90c8674d
+        sha256: 29eab94c97bf43a5130d7866d4ef28def5793cf146462d28cfd049b115176690
     build:
       noarch: python
       python:
@@ -111,7 +111,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: 764ca35f996898369819faaa5e107bd316ba7f1fd66ad9d501e8ba38f102b602
+        sha256: af906c5a49cb5488d0d3aea413f4e958dca1472f7cb458cce118c7a41d933c66
     build:
       noarch: python
       python:
@@ -141,7 +141,7 @@ outputs:
         - openpyxl >=3.1.5,<3.2.0
         - python-dotenv >=1.2.2,<2
         - pyjwt >=2.15.0,<3
-        -  oauthlib >=4.0.0,<5
+        - oauthlib >=4.0.0,<5
         - click >=8.1.7,<9
         - appdirs >=1.4.4,<1.5.0
         - jsonref >=1.1.0,<1.2.0
@@ -180,7 +180,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: 10607629b852e6f124683811f0a44480371e0638642f7ad1dac0681a9bf4bcda
+        sha256: 3ab2d50a556c98d2445ceeb291ad0bd092eaf9eb25a6045191f3661d6fb0896e
     build:
       noarch: python
       script: |
@@ -217,7 +217,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: 0f67ae5b8016af14a6947627d896f1a7265f578269aaebd04d2ad05155e1cc14
+        sha256: f6a2d07835518d60be10aae6b0f1db776612977d0f5020fe40bd092348b0d9ab
     build:
       noarch: python
       script: |
