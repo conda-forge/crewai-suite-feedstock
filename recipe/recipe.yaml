@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.28"
+  version: "1.15.29"
 
 recipe:
   name: crewai-suite
@@ -17,7 +17,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: 996edf242015e6dee8e6c4ab6d154950ac626cc5d95dfc0331b97ff41acbf6e1
+        sha256: 0ae83446a41b4464ae6ebcceacd92813dce353b28abc71e62e1faa6246a9da14
     build:
       noarch: python
       script: |
@@ -58,7 +58,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: 29eab94c97bf43a5130d7866d4ef28def5793cf146462d28cfd049b115176690
+        sha256: b238539584b6d29e4db68a3228f2698625e59b997d86bda7b28b38d32732f6dd
     build:
       noarch: python
       python:
@@ -111,7 +111,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: af906c5a49cb5488d0d3aea413f4e958dca1472f7cb458cce118c7a41d933c66
+        sha256: 7413362fd4dc6b9de80e1ae9227787ba5623d4be421ee0e03dda88c1066e97c6
     build:
       noarch: python
       python:
@@ -180,7 +180,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: 3ab2d50a556c98d2445ceeb291ad0bd092eaf9eb25a6045191f3661d6fb0896e
+        sha256: 52a8a33af05ac4377b44b132f1c79832d0f4cbd5a966909b01261fd040247cbc
     build:
       noarch: python
       script: |
@@ -217,7 +217,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: f6a2d07835518d60be10aae6b0f1db776612977d0f5020fe40bd092348b0d9ab
+        sha256: d118abc1d1f775760c89b44869b5a23df201392f283eea02999c42751549182c
     build:
       noarch: python
       script: |
