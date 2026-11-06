@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.35"
+  version: "1.15.36"
 
 recipe:
   name: crewai-suite
@@ -17,7 +17,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: bbd3680f9f15739134afdac625b53646e2fea287c82728971d9bcf7ef2ab3589
+        sha256: bce4d9ce9d58cf79f67da13ed9dd353041ff9167bf256a2d3142f4b2ac0d0454
     build:
       noarch: python
       script: |
@@ -58,7 +58,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: 8136af9b5b557d1f52cce086d89751ec421425d54fc5d64ee64afa5aeb7b5364
+        sha256: c92f9ae2044fa3a2e4524871a1f94db957a5efb26bbb10234650507fc6bf584c
     build:
       noarch: python
       python:
@@ -111,7 +111,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: 390eaec826ccdf561eddc23d0d9bda3cb995f0651c4e170f11488702dee73f6f
+        sha256: 05b3fe08eec7e9d6ec2452f3c4cab8ead7ddc64dc2efc85bcea15b73d9ed168e
     build:
       noarch: python
       python:
@@ -180,7 +180,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: a617cbb05c6b390dab6efac97762c22c214a2a737010d468c49750f6023acfc3
+        sha256: 75d7ef4c8bc0ff8b84f734e90590a051daf4e8827e9c698111694799364e0782
     build:
       noarch: python
       script: |
@@ -217,7 +217,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: c8c96db84a36924188f4421c52dc02d823a4a2de8f900dbc7344d9f51a5d3e96
+        sha256: d26dc9db15ad53dddf9246b9b4397f3caf8460691749727a62cee344a2140518
     build:
       noarch: python
       script: |
@@ -230,7 +230,7 @@ outputs:
       run:
         - python >=${{ python_min }},<3.14
         - pillow >=13.0.0
-        - pypdf >=6.21.2,<7
+        - pypdf >=6.21.4,<7
         - python-magic >=0.4.27
         - aiocache >=0.12.3,<0.13.0
         - aiofiles >=24.1.0,<24.2.0
