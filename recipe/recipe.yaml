@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.15.41"
+  version: "1.15.44"
 
 recipe:
   name: crewai-suite
@@ -17,7 +17,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_core/crewai_core-${{ version }}.tar.gz
-        sha256: 0033eba7b9c6ba5b531b332d141357df79089b2bd9b9485a44128236b0c2c5e1
+        sha256: 70e83ac319af2db6f28e5e933b0c408a6ea0e1e1479050efbbfc39f1c8a1de4c
     build:
       noarch: python
       script: |
@@ -37,9 +37,9 @@ outputs:
         - pyjwt >=2.15.0,<3
         - pydantic >=2.11.9,<2.13.0
         - rich >=13.7.1
-        - opentelemetry-api >=1.45.1,<2
-        - opentelemetry-sdk >=1.45.1,<2
-        - opentelemetry-exporter-otlp-proto-http >=1.45.1,<2
+        - opentelemetry-api >=1.45.2,<2
+        - opentelemetry-sdk >=1.45.2,<2
+        - opentelemetry-exporter-otlp-proto-http >=1.45.2,<2
         - tomli >=2.0.2,<2.1.0
     tests:
       - python:
@@ -58,7 +58,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_cli/crewai_cli-${{ version }}.tar.gz
-        sha256: a875890b7fd93e195968e63ae6161de65a11c741380ceb934c194f1f5777a642
+        sha256: 3de851f3e924af6c257cd11286dfef0b6ae317299790b2df7c7e5dd3f026213e
     build:
       noarch: python
       python:
@@ -111,7 +111,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai/crewai-${{ version }}.tar.gz
-        sha256: 4f6cc181e29fd7f5b7ef574eb39ce3bf73237e1c3b591f8fc296e5118b9d024b
+        sha256: c1ca558e8d4fe885e88cf4ab582fd928f56f7e6a92acb597acf734273b77d98d
     build:
       noarch: python
       python:
@@ -180,7 +180,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai_tools/crewai_tools-${{ version }}.tar.gz
-        sha256: f27efc63332e76d38081b090088b60f008c71e2a189d2be5ad1045a1dcf6d954
+        sha256: 3372cdbb8ff544d82c6bce8caa8ac77186796d62abbef70a9b56666235e0d7ec
     build:
       noarch: python
       script: |
@@ -217,7 +217,7 @@ outputs:
       version: ${{ version }}
     source:
       - url: https://pypi.org/packages/source/c/crewai-files/crewai_files-${{ version }}.tar.gz
-        sha256: f65185c85f13edaa825ff378238b1378800f22f842af844c022454a7310c9529
+        sha256: 7f5c6214280eebc5c0e04af3fdebf528150ccb8cde5931d51b4d63a73bbb5fb6
     build:
       noarch: python
       script: |
